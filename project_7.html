@@ -1,0 +1,207 @@
+ <!-- FlatFy Theme - Andrea Galanti /-->
+ <!doctype html>
+ <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+ <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+ <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+ <!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+ <!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+ <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+     <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
+     <meta name="author" content="">
+ 
+     <title>Jiaxu Meng</title>
+ 
+     <!-- Bootstrap core CSS -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+     <!-- Custom Google Web Font -->
+     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+     
+     <!-- Custom CSS-->
+     <link href="css/general.css" rel="stylesheet">
+     
+      <!-- Owl-Carousel -->
+     <link href="css/custom.css" rel="stylesheet">
+     <link href="css/owl.carousel.css" rel="stylesheet">
+     <link href="css/owl.theme.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+     <link href="css/animate.css" rel="stylesheet">
+     
+     <!-- Magnific Popup core CSS file -->
+     <link rel="stylesheet" href="css/magnific-popup.css"> 
+     
+     <script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+     <!--[if IE 9]>
+         <script src="js/PIE_IE9.js"></script>
+     <![endif]-->
+     <!--[if lt IE 9]>
+         <script src="js/PIE_IE678.js"></script>
+     <![endif]-->
+ 
+     <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+     <![endif]-->
+ 
+ </head>
+ 
+ <style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+ <body id="home">
+ 
+     <!-- Preloader -->
+     <div id="preloader">
+         <div id="status"></div>
+     </div>
+     
+     <!-- NavBar-->
+     <nav class="navbar-default" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html#home">Jiaxu Meng</a>
+          </div>
+
+          <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+              <ul class="nav navbar-nav">
+                  
+                 <li class="dropdown"><a href="index.html#concept">Bioelectronics</a>
+                     <div class="dropdown-content">
+                         <p><a href="project_1.html">Project 1</a></p>
+                         <p><a href="project_2.html">Project 2</a></p>
+                         <p><a href="project_3.html">Project 3</a></p>
+                     </div>
+                 </li>
+
+                 <li class="dropdown"><a href="index.html#implementation">Biophysics</a>
+                     <div class="dropdown-content">
+                         <p><a href="project_4.html">Project 4</a></p>
+                         <p><a href="project_5.html">Project 5</a></p>
+                         <p><a href="project_6.html">Project 6</a></p>
+                     </div>
+                 </li>
+
+                 <li class="dropdown"><a href="index.html#evaluation">Health data science</a>
+                     <div class="dropdown-content">
+                         <p><a href="project_7.html">Project 7</a></p>
+                     </div>
+                 </li>
+                 
+                 <li class="dropdown"><a href="aboutme.html">About me</a>
+                 </li>
+                 
+              </ul>
+          </div>
+         
+      </div>
+  </nav> 
+
+     
+     <!-- Project -->
+    <div class="container">
+      <h3 class="section-heading">Project 7. Predicting mortality in diabetic ICU patients using machine learning </h3>
+    </div>
+    <div class="container">
+        <div class="col-sm-2 wow fadeInLeftBig">
+          <img src="figures/fig2-icon.png" alt="fig2-icon" width="100%" height="50%">
+        </div>
+    </div>
+
+    
+    <div class="container">
+      <h4 id="background">Background</h4>
+
+        <div class="col-sm-12 wow fadeInLeftBig">        
+          <p class="lead">
+            Hospital operation can be improved by predicting the influence of diabetes on the risk of ICU mortality.
+            MIMIC-III is installed in a local Postgres database. 
+            Data are extracted and processed to DCSI, Elixhauser, and CCS index by aggregating in tabular formats in terms of assigning scores based on ICD-9-CM diagnosis code.<br>
+            The objective of this project is to predict and examine the influence of diabetes on outcome in ICU patients using predictive modeling approches including random forest, logistic regression, and their optimization.
+            Estimation on which coefficients have the largest impact on the models is also conducted.
+            The paper https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5961793/ is followed as a guildline and the scope is extended by including patients that don't have HbA1c data.
+            Also, data including patients with additional ICD9-code : 240.x-249.x, 357.2, 362.0, 366.41 and 648.4 which are also diabetic related code. 
+            The additional ICD9-codes are acquired from https://www.ncbi.nlm.nih.gov/pubmed/28416120.
+            In the project, the aims are:<br>
+            1. find out how standard comordity scores perform on ICU diabetic patients and whether it can be used to improve the model by using the combined method or by providing additional information (HbA1c, glucise and serum creatinine)<br>
+            2. find out how the same model performs on different dataset<br>
+            1) patients with HbA1c data<br>
+            2) patients without the data<br>
+            3. find out the best way to create a model that can handle both cases of patients and two approaches are tested in this project<br>
+            1) building separate model on each dataset<br>
+            2) changing HbA1c to catergorical data and add NaN as another category<br>
+            4. in Logistic Regression model, find out which factor contributes to the result most.
+          </p>
+        </div>
+
+    </div>
+
+
+
+
+      <div class="container">
+        <h4 id="demo 2">Results</h4>  
+        <div class="col-sm-12 wow fadeInRightBig" >
+          <p style="text-align:center">
+            <img src="figures/fig7-2.png" alt="fig7-2" width="100%" height="20%" >
+          </p>
+      </div>
+      </div>
+
+
+     <br>
+     <br>
+     <!-- JavaScript -->
+     <script src="js/jquery-1.10.2.js"></script>
+     <script src="js/bootstrap.js"></script>
+     <script src="js/owl.carousel.js"></script>
+     <script src="js/script.js"></script>
+     <!-- StikyMenu -->
+     <script src="js/stickUp.min.js"></script>
+     <script type="text/javascript">
+       jQuery(function($) {
+         $(document).ready( function() {
+           $('.navbar-default').stickUp();
+           
+         });
+       });
+     
+     </script>
+     <!-- Smoothscroll -->
+     <script type="text/javascript" src="js/jquery.corner.js"></script> 
+     <script src="js/wow.min.js"></script>
+     <script>
+      new WOW().init();
+     </script>
+     <script src="js/classie.js"></script>
+     <script src="js/uiMorphingButton_inflow.js"></script>
+     <!-- Magnific Popup core JS file -->
+     <script src="js/jquery.magnific-popup.js"></script> 
+ </body>
+ 
+ </html>
+ 
